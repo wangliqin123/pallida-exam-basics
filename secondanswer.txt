@@ -1,0 +1,2 @@
+constructor is used by classes
+in the constructor we can set the default values

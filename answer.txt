@@ -1,0 +1,1 @@
+every function is a method but not every method is a function
