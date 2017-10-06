@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FavouriteAnimals
 {
@@ -10,9 +6,9 @@ namespace FavouriteAnimals
     {
         static void Main(string[] args)
         {
-            Commands commands = new Commands();
-
             Welcome();
+
+            Commands commands = new Commands();
 
             string[] arguments = { "-a", "-r" };
 

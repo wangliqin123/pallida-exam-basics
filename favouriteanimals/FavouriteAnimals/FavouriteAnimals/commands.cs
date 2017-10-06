@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FavouriteAnimals
 {
@@ -11,6 +8,7 @@ namespace FavouriteAnimals
     {
         private string[] text;
         private string path;
+        private string newAnimal;
 
         public Commands()
         {
