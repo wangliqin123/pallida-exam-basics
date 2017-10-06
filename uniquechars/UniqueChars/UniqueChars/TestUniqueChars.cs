@@ -27,5 +27,18 @@ namespace UniqueChars
 
             Assert.AreEqual(output, chars.UniqueCharacters(word));
         }
+
+        [Test]
+        public void TestUniqueCharactersWhenEmptyString()
+        {
+            string word = "";
+
+            List<string> output = new List<string>()
+            {
+                {""},             
+            };
+
+            Assert.AreEqual(output, chars.UniqueCharacters(word));
+        }
     }
 }

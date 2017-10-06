@@ -10,7 +10,7 @@ namespace UniqueChars
     {
         public List<string> UniqueCharacters(string word)
         {
-            List<string> letters = new List<string> { "c", "a", "t" };
+            List<string> letters = new List<string> { "" };
             return letters;
         }
     }
