@@ -21,7 +21,7 @@ namespace FavouriteAnimals
 
             for (int i = 1; i <= text.Length; i++)
             {
-                    Console.WriteLine("{0} - {1}", i, text[i - 1]);
+                    Console.WriteLine("{0}",text[i - 1]);
             } 
         }
 
