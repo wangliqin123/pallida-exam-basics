@@ -1,12 +1,8 @@
 ﻿using NUnit.Framework;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UniqueChars;
 
-namespace UniqueChars
+namespace TestUniqueChars
 {
     [TestFixture]
     class TestChars
@@ -36,6 +32,19 @@ namespace UniqueChars
             List<string> output = new List<string>()
             {
                 {""},             
+            };
+
+            Assert.AreEqual(output, chars.UniqueCharacters(word));
+        }
+
+        [Test]
+        public void TestUniqueCharactersWhenNullString()
+        {
+            string word = null;
+
+            List<string> output = new List<string>()
+            {
+                {"null"},
             };
 
             Assert.AreEqual(output, chars.UniqueCharacters(word));

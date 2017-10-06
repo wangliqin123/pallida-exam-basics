@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System;
 
 namespace UniqueChars
 {
@@ -10,8 +7,15 @@ namespace UniqueChars
     {
         public List<string> UniqueCharacters(string word)
         {
-            List<string> letters = new List<string> { "" };
-            return letters;
+            List<string> letters = new List<string>();
+
+            string value = word;
+            String[] substrings = value.Split();
+
+            foreach (var substring in substrings)
+            {
+                substring.Append();
+            }
         }
     }
 }
