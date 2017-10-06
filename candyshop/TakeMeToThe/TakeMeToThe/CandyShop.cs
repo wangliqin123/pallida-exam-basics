@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace TakeMeToThe
 {
     class CandyShop
     {
+        Sweets sweets = new Sweets();
+
         public int sugarAmount;
         public double money;
         public int sugarPrice;
-        public int boughtSugarGramm;
+
 
         public CandyShop()
         {
@@ -22,10 +20,30 @@ namespace TakeMeToThe
 
         List<Sweets> inventory = new List<Sweets>();
 
-        public double BuySugar(int boughtSugarGramm)
+        public void BuySugar(int boughtSugarGramm)
         {
-            money = money - (boughtSugarGramm /sugarPrice * 10);
+            money = money - (boughtSugarGramm / sugarPrice * 10);
             sugarAmount = sugarAmount + boughtSugarGramm;
         }
-    }  
+        public void CreateSweets()
+        {
+
+        }
+
+        public void PrintInfo()
+        {
+
+        }
+
+        public void Sell()
+        {
+
+        }
+
+        public void Raise(int raiseNumber)
+        {
+            sweets.price = sweets.price * raiseNumber;
+        }
+    }
 }
+

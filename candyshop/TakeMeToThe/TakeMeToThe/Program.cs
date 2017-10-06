@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TakeMeToThe
+﻿namespace TakeMeToThe
 {
     class Program
     {
@@ -13,6 +7,10 @@ namespace TakeMeToThe
             CandyShop candyShop = new CandyShop();
 
             candyShop.CreateSweets();
+            candyShop.PrintInfo();
+            candyShop.Raise(5);
+            candyShop.PrintInfo();
+            candyShop.BuySugar(200);
         }
     }
 }

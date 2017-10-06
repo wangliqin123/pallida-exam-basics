@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TakeMeToThe
+﻿namespace TakeMeToThe
 {
     class Lollipop : Sweets
     {
@@ -13,7 +7,5 @@ namespace TakeMeToThe
             this.price = 10;
             this.commoditySugar = 5;
         }
-
-        
     }
 }
