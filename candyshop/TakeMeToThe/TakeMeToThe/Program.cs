@@ -11,6 +11,8 @@ namespace TakeMeToThe
         static void Main(string[] args)
         {
             CandyShop candyShop = new CandyShop();
+
+            candyShop.CreateSweets();
         }
     }
 }

@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace TakeMeToThe
 {
-    class Candy
+    class Candy : Sweets
     {
+        public Candy()
+        {
+            this.price = 20;
+            this.commoditySugar = 10;
+        }
+          
+
     }
 }
