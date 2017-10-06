@@ -31,7 +31,7 @@ namespace TestUniqueChars
 
             List<string> output = new List<string>()
             {
-                {""},             
+                {"empty"},             
             };
 
             Assert.AreEqual(output, chars.UniqueCharacters(word));

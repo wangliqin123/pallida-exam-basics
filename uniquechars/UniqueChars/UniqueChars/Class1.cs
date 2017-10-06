@@ -9,15 +9,23 @@ namespace UniqueChars
         {
             List<string> letters = new List<string>();
 
+            if (word == "")
+            {
+                letters.Add("empty");
+            }
+            else if (word == null)
+            {
+                letters.Add("null");
+            }
+
             string value = word;
             String[] substrings = value.Split();
 
             foreach (var substring in substrings)
             {
-                substring.ToCharArray();
+                substring.ToString();
             }
-            char[] letter
-            
+            return letters;
         }
-    }
+    } 
 }

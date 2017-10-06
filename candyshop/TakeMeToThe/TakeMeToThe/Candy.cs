@@ -13,7 +13,5 @@ namespace TakeMeToThe
             this.price = 20;
             this.commoditySugar = 10;
         }
-          
-
     }
 }

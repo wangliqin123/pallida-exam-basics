@@ -14,9 +14,6 @@ namespace TakeMeToThe
             this.commoditySugar = 5;
         }
 
-        public void CreatLollipop()
-        {
-            money - price;
-        }
+        
     }
 }
