@@ -11,8 +11,6 @@ namespace FavouriteAnimals
     {
         private string[] text;
         private string path;
-        private string newAnimal;
-        private string line;
 
         public Commands()
         {

@@ -12,7 +12,9 @@ namespace FavouriteAnimals
         {
             Commands commands = new Commands();
 
-            string[] arguments = {"-a", "-r"};
+            Welcome();
+
+            string[] arguments = { "-a", "-r" };
 
             if (args.Length == 0)
             {
@@ -26,6 +28,11 @@ namespace FavouriteAnimals
             {
                 commands.RemoveAnimal(args[1]);
             }
+        }
+
+        public static void Welcome()
+        {
+            Console.WriteLine("C# FavouriteAnimals [animal] [animal]");
         }
     }
 }
