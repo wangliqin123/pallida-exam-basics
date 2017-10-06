@@ -12,15 +12,19 @@ namespace FavouriteAnimals
         {
             Commands commands = new Commands();
 
-            string[] arguments = { "-l", "-a", "-r", "-c" };
+            string[] arguments = {"-a", "-r"};
 
             if (args.Length == 0)
             {
                 commands.ReadFile();
             }
-            if (args[0] == "-l")
+            if (args[0] == "-a")
             {
-                commands.AddAnimal();
+                commands.AddAnimal(args[1]);
+            }
+            if (args[0] == "-r")
+            {
+                commands.RemoveAnimal(args[1]);
             }
         }
     }

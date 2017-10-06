@@ -11,6 +11,8 @@ namespace FavouriteAnimals
     {
         private string[] text;
         private string path;
+        private string newAnimal;
+        private string line;
 
         public Commands()
         {
@@ -27,9 +29,19 @@ namespace FavouriteAnimals
             } 
         }
 
-        public void AddAnimal()
+        public void AddAnimal(string newAnimal)
         {
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                writer.WriteLine(newAnimal);
+            }
+        }
 
+        public void RemoveAnimal(string line)
+        {
+            List<string> lines = new List<string>(File.ReadAllLines(path));
+            lines.RemoveAt(int.Parse(line) - 1);
+            File.WriteAllLines(path, lines);
         }
     }
 }
