@@ -14,8 +14,10 @@ namespace UniqueChars
 
             foreach (var substring in substrings)
             {
-                substring.Append();
+                substring.ToCharArray();
             }
+            char[] letter
+            
         }
     }
 }
